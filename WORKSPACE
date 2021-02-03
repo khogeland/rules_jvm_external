@@ -134,9 +134,20 @@ maven_install(
                 "com.google.j2objc:j2objc-annotations",
             ],
         ),
+        maven.artifact(
+            group = "org.scala-tools.sbt",
+            artifact = "api_2.9.1",
+            version = "0.11.2",
+        ),
+        maven.artifact(
+            group = "org.scala-sbt.ivy",
+            artifact = "ivy",
+            version = "2.4.0-sbt-f4ce4a6221e75ceaae4febabbad48fb97f9814d3",
+        ),
     ],
     repositories = [
         "https://repo1.maven.org/maven2",
+        "ivy:https://dl.bintray.com/typesafe/ivy-releases/[organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]",
     ],
 )
 
