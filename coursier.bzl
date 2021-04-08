@@ -50,7 +50,7 @@ sh_binary(
     name = "pin",
     srcs = ["pin.sh"],
     args = [
-      "$(rootpath :jq-binary)",
+      "$(execpath :jq-binary)",
     ],
     data = [
         ":jq-binary",
